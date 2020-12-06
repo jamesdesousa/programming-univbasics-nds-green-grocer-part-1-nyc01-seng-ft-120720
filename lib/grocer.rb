@@ -14,6 +14,7 @@ end
 
 def consolidate_cart(cart)
   arr = [] 
+  binding.pry 
   count = 0
   c = 1 
   while count < cart.length do
