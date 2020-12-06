@@ -18,6 +18,7 @@ def consolidate_cart(cart)
   c = 1 
   while count < cart.length do
     arr << cart[count]
+    count = count + 1 
     
     
   end 
