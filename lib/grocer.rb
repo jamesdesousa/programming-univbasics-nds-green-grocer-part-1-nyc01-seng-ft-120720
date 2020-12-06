@@ -13,9 +13,13 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  binding.pry 
   arr = [] 
-  count = 0 
+  count = 0
+  while count < cart.length do 
+    binding.pry 
+    arr << cart[count]
+    cart[count]
+  end 
 
 end
 
