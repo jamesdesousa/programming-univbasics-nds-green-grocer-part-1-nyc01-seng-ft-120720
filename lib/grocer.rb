@@ -15,8 +15,9 @@ end
 def consolidate_cart(cart)
   arr = [] 
   count = 0
+  c = 1 
   while count < cart.length do
-    cart[count] << 
+    cart[count] << cart[count].store
     arr << cart[count]
     
   end 
