@@ -17,8 +17,9 @@ def consolidate_cart(cart)
   count = 0
   c = 1 
   while count < cart.length do
-    cart[count] << cart[count].store()
+    cart[count] << cart[count].store(:count, c)
     arr << cart[count]
+    
     
   end 
 
