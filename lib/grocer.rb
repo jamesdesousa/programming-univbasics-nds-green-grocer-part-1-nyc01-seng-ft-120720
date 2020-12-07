@@ -22,6 +22,7 @@ def consolidate_cart(cart)
     if find_item_by_name_in_collection(cart[count][:item], arr)
       arr[count][:count] = c + 1 
     end 
+    count = count + 1 
       
     
   end 
