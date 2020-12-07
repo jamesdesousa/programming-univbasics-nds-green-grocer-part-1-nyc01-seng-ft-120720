@@ -18,10 +18,10 @@ def consolidate_cart(cart)
   c = 1 
   while count < cart.length do
     cart[count][:count] = c 
-    arr << cart[count]
-    if find_item_by_name_in_collection(cart[(count-1)][:item], arr) != nil  
+    if find_item_by_name_in_collection(cart[count][:item], arr) != nil  
       arr[count][:count] = arr[count][:count] + 1 
     end 
+    arr << cart[count]
     count = count + 1 
       
     
