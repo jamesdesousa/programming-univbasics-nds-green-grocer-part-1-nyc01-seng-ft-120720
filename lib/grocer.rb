@@ -21,6 +21,8 @@ def consolidate_cart(cart)
       cart[count][:count] = c 
       arr << cart[count]
     else 
+      cart[count][:count] = c 
+      arr << cart[count]
       arr[count][:count] = arr[count][:count] + 1
        
     end
