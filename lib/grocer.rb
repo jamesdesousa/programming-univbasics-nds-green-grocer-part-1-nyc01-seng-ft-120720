@@ -20,7 +20,7 @@ def consolidate_cart(cart)
     cart[count][:count] = c 
     arr << cart[count]
     c = 1 
-    if find_item_by_name_in_collection(cart[count][:item], arr)
+    if find_item_by_name_in_collection(cart[count][:item], arr) == true 
       arr[count][:count] = c + 1 
     end 
     count = count + 1 
