@@ -17,11 +17,15 @@ def consolidate_cart(cart)
   count = 0
   c = 1 
   while count < cart.length do
-    cart[count][:count] = c 
-    if find_item_by_name_in_collection(cart[count][:item], arr) != nil  
-      arr[count][:count] = arr[count][:count] + 1 
-    end 
-    arr << cart[count]
+    if find_item_by_name_in_collection(cart[count][:item], arr) == nil
+      cart[count][:count] = c 
+      arr << cart[count]
+    else 
+      arr[count][:count] = arr[count][:count] + 1
+       
+    end
+     
+    
     count = count + 1 
       
     
